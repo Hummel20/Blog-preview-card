@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: var(--border-radius-base);
-    max-width: 330px;
+    max-width: 20.625rem;
     width: 90%;
     height: auto;
     box-shadow: var(--shadow-main);
