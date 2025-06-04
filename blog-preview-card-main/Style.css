@@ -1,0 +1,109 @@
+:root {
+    --color-yellow: hsl(47,88%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray-500: hsl(0, 0%, 42%);
+    --color-gray-900: hsl(0, 0%, 7%);
+    --font-main: 'Figtree', sans-serif;
+    --font-size-small: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-h1: 1.5rem;
+    --font-weight-regular: 500;
+    --font-weight-bold: 800;
+    --shadow-main: 8px 8px 0px var(--color-gray-900);
+    --border-radius-base: 1rem;
+    --padding-base: 2rem;
+}
+
+body {
+    background-color: var(--color-yellow);
+    font-family: var(--font-main), serif;
+    font-weight: var(--font-weight-regular);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.container {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-base);
+    max-width: 330px;
+    width: 90%;
+    height: auto;
+    box-shadow: var(--shadow-main);
+    padding: 1.25rem;
+    border: 1px solid var(--color-gray-900);
+}
+
+.heading {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h1);
+    color: var(--color-gray-900);
+    margin-bottom: 0.75rem;
+}
+
+.description {
+    font-size: Var(font-size-base);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-gray-500);
+    line-height: 1.5;
+}
+
+.tag {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: var(--color-yellow);
+    font-family: var(--font-main), serif;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-small);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.publish_date {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-gray-500);
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: calc(var(--border-radius-base) - 6px);
+    margin-bottom: var(--padding-base);
+    margin-top: 0;
+    object-fit: cover;
+}
+.author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.author_photo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.author_name {
+    font-weight: var(--font-weight-bold);
+    font-size: 0.75rem;
+    color: var(--color-gray-900);
+}
+
+.attribution {
+    font-size: 0.625rem;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
